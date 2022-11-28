@@ -140,6 +140,43 @@ a {
 .style33 {
 				font-size: large;
 }
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  right: 20px;
+  margin-left: 20px;
+  max-width: 300px;
+}
+
+.callout-header {
+  padding: 25px 15px;
+  background: #555;
+  font-size: 30px;
+  color: white;
+  font-family: "MS Sans Serif"; 
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #ccc;
+  color: black;
+  font-family: "MS Sans Serif";
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+
 </style>
 </head>
 
@@ -251,6 +288,16 @@ a {
 				</tr>
 </table>
 <p class="style12">&nbsp;</p>
+
+<div class="callout">
+  <div class="callout-header"><strong>Mayer Néptáncműhely Karácsonyi Műsora</strong></div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p>2022. december 19., 18:00<br/>Petőfi Művelődési Központ, Bicske<br/><a href="https://mayerneptancmuhely.hu/musorok">További információk</a></p>
+  </div>
+</div>
+
+
 
 </body>
 
