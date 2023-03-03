@@ -82,11 +82,6 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
 .style33 {
 				color: #808000;
 }
-.style34 {
-				font-size: x-large;
-				color: #808000;
-				text-decoration: underline;
-}
 a {
 				color: #808000;
 }
@@ -111,6 +106,22 @@ a {
 .style27 {
 				color: #808000;
 }
+
+input[type=button], input[type=submit], input[type=reset] {
+				width: 100%;
+				max-width: 600px;
+				background-color: #808000;
+				border: none;
+				color: white;
+				padding: 16px 32px;
+				text-decoration: none;
+				margin: 30px 0px;
+				cursor: pointer;
+				font-weight: bold;
+				font-size: x-large;
+				font-family: sans-serif;
+}    
+
 </style>
 <meta name="keywords" content="mayer, neptancmuhely, mayerneptancmuhely, neptanc, muhely, nep, tanc, folk, dance, workshop, jelentkezes, application, ovodas, iskolas, also, proba, bicske, csillagszemuek" />
 <meta name="description" content="Óvodás és alsó tagozatos gyermekek jelentkezését várjuk csoportjainkba. Jelentkezés menete, elérhetőségek." />
@@ -163,12 +174,24 @@ a {
 								&gt;&gt;</strong></span></a><br />
 								<br />
 								<br />
+
+								<form>
+									<div class="style30">
+									<input type="button" value="Jelentkezem" onclick="onClick()"/>
+									</div>
+								</form>
+
+								<div class="style30">
+
+								<!--
 								<strong><span class="style34">
 								<a href="mailto:info@mayerneptancmuhely.hu?subject=Jelentkezés">
 								<span class="style33">Jelentkezem</span></a></span></strong><br />
+								/-->
 								<br />
 								<br />
 								További információk (koppintson a képre):</span><br />
+								</div>
 								</td>
 				</tr>
 				<tr>
@@ -196,6 +219,13 @@ a {
 								<span class="style27">info@mayerneptancmuhely.hu</span></a></span></span></span></td>
 				</tr>
 </table>
+
+
+<script>
+	function onClick() {
+		window.location.href = "mailto:info@mayerneptancmuhely.hu?subject=Jelentkezés";
+	}
+</script>
 
 </body>
 
