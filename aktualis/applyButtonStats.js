@@ -1,4 +1,5 @@
 function applyOnClick() {
+    alert("debug");
     var request = new XMLHttpRequest();
 
     request.open("GET", "applyBtnClickCount.txt");
