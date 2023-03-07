@@ -36,7 +36,7 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
 <title>Jelentkezés - Mayer Néptáncműhely</title>
 <link rel="icon" type="image/x-icon" href="media/logo_proba.jpg"/>
 
-<script>src="applyButtonStats.js"</script>
+<!-- <script>src="applyButtonStats.js"</script> -->
 
 <style type="text/css">
 .style8 {
@@ -233,6 +233,25 @@ input[type=button], input[type=submit], input[type=reset] {
 	}
 </script>
 /-->
+
+<script>
+	function applyOnClick() {
+    alert("debug");
+    var request = new XMLHttpRequest();
+
+    request.open("GET", "applyBtnClickCount.txt");
+    request.send(null);
+
+    var count = parseInt(request.responseText);
+
+    count++;
+
+    request.open("POST", "applyBtnClickCount.txt", true);
+    request.send(count.toString());
+
+    window.location.href = "mailto:info@mayerneptancmuhely.hu?subject=Jelentkezés";
+}
+</script>
 
 </body>
 
