@@ -38,6 +38,60 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
 <link rel="icon" type="image/x-icon" href="media/logo_proba.jpg"/>
 
 <style type="text/css">
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: small;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 .style8 {
 				font-size: xx-large;
 				text-align: center;
@@ -113,9 +167,15 @@ a {
 				font-family: sans-serif;
 }
 .style34 {
-				color: #000000;
 				font-size: 6pt;
 }
+
+.pop {
+				text-decoration: underline;
+				font-size: 6pt;
+				color: #646464
+}
+
 .style36 {
 				text-align: left;
 }
@@ -209,9 +269,25 @@ a {
 								<span class="style26">
 								<span class="style34">
 								<a href="https://kovacsadam23.github.io/" target="_blank" class="style27">Webmaster</a> 
-								| <a href="mailto:kovacsadi23@gmail.com?subject=Észrevétel - Mayer Néptáncműhely weboldal">Contact</a></span></span></span></td>
+								| 
+								
+								<!-- <a href="mailto:kovacsadi23@gmail.com?subject=Észrevétel - Mayer Néptáncműhely weboldal">Contact</a> --> 
+							
+								<div class="popup" onclick="popupControl()">
+								<a class="pop">Contact</a>
+								<span class="popuptext" id="myPopup">Kovács Ádám<br><a href="mailto:kovacsadi23@gmail.com?subject=Észrevétel - Mayer Néptáncműhely weboldal">E-mail</a></span>
+								</div>
+							
+								</span></span></span></td>
 				</tr>
 </table>
+
+<script>
+	function popupControl() {
+	  var popup = document.getElementById("myPopup");
+	  popup.classList.toggle("show");
+	}
+	</script>
 
 </body>
 
