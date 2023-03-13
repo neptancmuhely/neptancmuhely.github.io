@@ -125,6 +125,7 @@ input[type=button], input[type=submit], input[type=reset] {
 				font-weight: bold;
 				font-size: x-large;
 				font-family: sans-serif;
+				border-radius: 5px;
 }    
 
 </style>
@@ -153,16 +154,16 @@ input[type=button], input[type=submit], input[type=reset] {
 				<tr>
 								<td style="width: 23%" class="style19">
 								<a class="style18" href="https://mayerneptancmuhely.hu/oktatas">
-								<span class="style14">Oktatás</span></a></td>
+								<span class="style14"><div>Oktatás</div></span></a></td>
 								<td style="width: 23%" class="style19">
 								<a class="style18" href="https://mayerneptancmuhely.hu/galeria">
-								<span class="style14">Galéria</span></a></td>
+								<span class="style14"><div>Galéria</div></span></a></td>
 								<td style="width: 23%" class="style19">
 								<a class="style18" href="https://mayerneptancmuhely.hu/rolunk">
-								<span class="style14">Rólunk</span></a></td>
+								<span class="style14"><div>Rólunk</div></span></a></td>
 								<td style="width: 23%" class="style19">
 								<a class="style18" href="https://mayerneptancmuhely.hu/kapcsolat">
-								<span class="style14">Kapcsolat</span></a></td>
+								<span class="style14"><div>Kapcsolat</div></span></a></td>
 				</tr>
 </table>
 <p>&nbsp;</p>
@@ -236,18 +237,6 @@ input[type=button], input[type=submit], input[type=reset] {
 
 <script>
 	function applyOnClick() {
-    var request = new XMLHttpRequest();
-
-    request.open("GET", "applyBtnClickCount.txt");
-    request.send(null);
-
-    var count = parseInt(request.responseText);
-
-    count++;
-
-    request.open("POST", "applyBtnClickCount.txt", true);
-    request.send(count.toString());
-
     window.location.href = "mailto:info@mayerneptancmuhely.hu?subject=Jelentkezés";
 }
 </script>
