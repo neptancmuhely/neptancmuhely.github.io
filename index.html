@@ -543,6 +543,7 @@ function showSlides() {
 		cookieSplit = cookies.split(";");
 
 		for (var i = 0; i < cookieSplit.length; i++) {
+			alert(cookieSplit[i]);
 			if (cookieSplit[i] == "closed=true") {
 				alert("megvan");
 				document.getElementById("closebtn").parentElement.style.display='none';
