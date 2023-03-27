@@ -540,6 +540,7 @@ function showSlides() {
 <script>
 	function checkCookie() {
 		let cookies = document.cookie;
+		alert(document.cookie);
 		cookieSplit = cookies.split(";");
 		calloutCookie = cookieSplit[0];
 		if (calloutCookie == "closed=true") {
