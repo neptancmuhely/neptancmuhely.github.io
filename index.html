@@ -533,13 +533,15 @@ function showSlides() {
 <script>
 	function closebtnClick() {
 		document.getElementById("closebtn").parentElement.style.display='none';
-		document.cookie = "closed=true";
+		document.cookie = "closed=true; expires=Thu, 15 Apr 2023 12:00:00 UTC;";
 	}
 </script>
 
 <script>
 	function checkCookie() {
-		let calloutCookie = document.cookie;
+		let cookies = document.cookie;
+		cookieSplit = cookies.split(";");
+		calloutCookie = cookieSplit[0];
 		if (calloutCookie == "closed=true") {
 			document.getElementById("closebtn").parentElement.style.display='none';
 		}
