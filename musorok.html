@@ -94,6 +94,22 @@ a {
 				max-width: 450px;
 				height: auto;
 }
+
+input[type=button], input[type=submit], input[type=reset] {
+				width: 100%;
+				max-width: 300px;
+				background-color: #808000;
+				border: none;
+				color: white;
+				padding: 5px 5px;
+				text-decoration: none;
+				margin: 0px 0px;
+				cursor: pointer;
+				font-weight: bold;
+				font-size: large;
+				font-family: sans-serif;
+				border-radius: 3px;
+}  
 </style>
 </head>
 
@@ -115,16 +131,16 @@ a {
 				<tr>
 								<td style="width: 23%" class="style19">
 								<a class="style18" href="https://mayerneptancmuhely.hu/oktatas">
-								<span class="style14">Oktatás</span></a></td>
+								<span class="style14"><div>Oktatás</div></span></a></td>
 								<td style="width: 23%" class="style19">
 								<a class="style18" href="https://mayerneptancmuhely.hu/galeria">
-								<span class="style14">Galéria</span></a></td>
+								<span class="style14"><div>Galéria</div></span></a></td>
 								<td style="width: 23%" class="style19">
 								<a class="style18" href="https://mayerneptancmuhely.hu/rolunk">
-								<span class="style14">Rólunk</span></a></td>
+								<span class="style14"><div>Rólunk</div></span></a></td>
 								<td style="width: 23%" class="style19">
 								<a class="style18" href="https://mayerneptancmuhely.hu/kapcsolat">
-								<span class="style14">Kapcsolat</span></a></td>
+								<span class="style14"><div>Kapcsolat</div></span></a></td>
 				</tr>
 </table>
 <p>&nbsp;</p>
@@ -139,45 +155,30 @@ a {
 								<td class="style23">&nbsp;</td>
 				</tr>
 				<tr>
-								<td class="style20"><strong>2023. február 24. 
-								18:00</strong> - Fáklyás menet a békéért<br />
+								<td class="style20"><strong>2023. április 13. 
+								19:00</strong> - Csillagszemű 30 éves jubileumi műsora<br />
 								<br />
-								<strong>Helyszín:</strong> Bicske, Szent István 
-								út 31.<br />
+								<strong>Helyszín:</strong> Hagyományok Háza<br>1011 Budapest, Corvin tér 8.<br />
 								<strong>
 								<span class="style22"><br />
 								</span>
 								<span class="style24">
+
+								<!-- 
 								<a target="_blank" href="https://www.facebook.com/photo?fbid=562612152585348">További 
-								információk &gt;&gt;</a></span></strong></td>
+								információk &gt;&gt;</a> //-->
+								
+								<form>
+									<input type="button" value="Jegyek, információk" onclick="onClick()"/>
+								</form>
+
+								</span></strong></td>
 				</tr>
 				<tr>
 								<td class="style23">&nbsp;</td>
 				</tr>
 				<tr>
 								<td class="style23">&nbsp;</td>
-				</tr>
-				<tr>
-								<td class="style20"><strong>2023. február 25. 
-								10:00</strong> - II. Kolbásztöltő Verseny<br />
-								<br />
-								<strong>Helyszín:</strong> Bicske Város 
-								Kemencéje, Bicske Szíve Park<br />
-								<strong>
-								<span class="style22"><br />
-								</span>
-								<span class="style24">
-								<a target="_blank" href="https://www.facebook.com/events/1286706695583500/">További 
-								információk &gt;&gt;</a></span></strong></td>
-				</tr>
-				<tr>
-								<td class="style23">&nbsp;</td>
-				</tr>
-				<tr>
-								<td class="style23">&nbsp;</td>
-				</tr>
-				<tr>
-								<td class="style20">&nbsp;</td>
 				</tr>
 </table>
 
@@ -196,6 +197,12 @@ a {
 								</td>
 				</tr>
 </table>
+
+<script>
+	function onClick() {
+		window.open("https://hagyomanyokhaza.jegy.hu/program/csillagszemu-30-eves-jubileumi-musora-146569", "_blank");
+	}
+</script>
 
 </body>
 
