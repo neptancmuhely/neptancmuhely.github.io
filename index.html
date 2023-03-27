@@ -542,6 +542,8 @@ function showSlides() {
 		let cookies = document.cookie;
 		cookieSplit = cookies.split(";");
 
+		alert(cookieSplit);
+
 		for (var i = 0; i < cookieSplit.length; i++) {
 			if (cookieSplit[i] == "closed=true") {
 				document.getElementById("closebtn").parentElement.style.display='none';
@@ -550,7 +552,7 @@ function showSlides() {
 	}
 
 	function setExpiryDate() {
-		
+
 	}
 </script>
 
