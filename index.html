@@ -533,7 +533,7 @@ function showSlides() {
 <script>
 	function closebtnClick() {
 		document.getElementById("closebtn").parentElement.style.display='none';
-		document.cookie = "closed=true; expires=Sat, 15 Apr 2023 12:00:00 UTC; path=/";
+		document.cookie = "closed=true; expires=" + setExpiryDate().toString() + "; path=/";
 	}
 </script>
 
@@ -543,16 +543,21 @@ function showSlides() {
 		cookieSplit = cookies.split(";");
 
 		for (var i = 0; i < cookieSplit.length; i++) {
-			alert(cookieSplit[i]);
-			if (cookieSplit[i] == "closed=true") {
-				alert("megvan");
+			if (cookieSplit[i].includes("closed=true")) {
 				document.getElementById("closebtn").parentElement.style.display='none';
 			}
 		}
 	}
 
-	function setExpiryDate() {
+</script>
 
+<script>
+	function setExpiryDate() {
+		const date = new Date();
+		var days = 2;
+		date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+
+		return date.toUTCString();
 	}
 </script>
 
