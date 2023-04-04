@@ -76,9 +76,9 @@
         <br><br><br>
 
 
-        <form>
+        <form action="checkPassword()">
             <input type="password" id="psw" name="password"> <br>
-            <input type="button" value="Tovább" onclick="checkPassword()">
+            <input type="button" id="btn" value="Tovább" onclick="checkPassword()">
         </form>
         
         
@@ -96,6 +96,16 @@
                 }
             }
       </script>
+
+        <script>
+            var input = document.getElementById("psw");
+            input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById("btn").click();
+            }
+            });
+        </script>
 
     </body>
 </html>
