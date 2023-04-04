@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Továbblépéshez írja be a jelszót!</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/x-icon" href="../media/logo_proba.jpg"/>
+
+        <style type="text/css">
+
+            .title {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: xx-large;
+                font-weight: bold;
+                text-align: center;
+                color: white;
+            }
+
+            input[type=password] {
+                width: 100%;
+                max-width: 700px;
+                text-align: center;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 3px solid #ccc;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+                outline: none;
+            }
+
+            input[type=password]:focus {
+                border: 3px solid #555;
+            }
+
+            input[type=button], input[type=submit], input[type=reset] {
+                width: 100%;
+                max-width: 700px;
+                background-color: #04AA6D;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 10px 0px;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: x-large;
+            }           
+
+            .form-center {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+
+            body {
+                text-align: center;
+            }
+
+            form {
+                display: inline-block;
+            }
+
+            .logo {
+                width: 30%;
+                max-width: 100px;
+            }
+
+        </style>
+    </head>
+
+    <body style="color: white; background-color: #192833;">
+        <img src="../logo/MAYER_LOGO_SIMBOL_INVERSE_750px_x_624px.png" class="logo">
+        <p class="title">Továbblépéshez írja be a jelszót!</p>
+        <br><br><br>
+
+
+        <form>
+            <input type="password" id="psw" name="password"> <br>
+            <input type="button" value="Tovább" onclick="checkPassword()">
+        </form>
+        
+        
+        <script>
+            function checkPassword(){
+
+                // If you can read this, you are automatically granted to the site :D
+
+                if (document.getElementById('psw').value == '20230401') { 
+                    window.location.href = "https://drive.google.com/file/d/1UTOL_GFGKd0A1Rjfx5-LKZfgMNphuH80/view?usp=share_link";
+                } 
+                else {
+                    alert('Wrong Password!\nHelytelen jelszó!');
+                    return false;
+                }
+            }
+      </script>
+
+    </body>
+</html>
