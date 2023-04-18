@@ -1023,5 +1023,22 @@ function showSlides(n) {
 	}
 </script>
 
+
+<script>
+  document.onkeydown = checkKey;
+
+  function checkKey(e) {
+    e = e || window.event;
+
+    if (e.keyCode == "39") {
+      plusSlides(1);
+    }
+
+    if (e.keyCode == "37") {
+      plusSlides(-1);
+    }
+  }
+</script>
+
 </body>
 </html> 
