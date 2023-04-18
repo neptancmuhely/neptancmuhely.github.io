@@ -57,6 +57,27 @@ img {vertical-align: middle;}
   border-radius: 3px 0 0 3px;
 }
 
+.prevb, .nextb {
+  cursor: pointer;
+  position: absolute;
+  top: 90%;
+  width: auto;
+  padding: 16px;
+  margin-top: 0px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextb {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(1,1,1,1);
@@ -111,13 +132,16 @@ img {vertical-align: middle;}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
+  .prev, .next, .prevb, .nextb,.text {font-size: 11px}
 }
 </style>
 <title>Hagyományok Háza 2023 - Album - Mayer Néptáncműhely</title>
 <link rel="icon" type="image/x-icon" href="../media/logo_proba.jpg"/>
 </head>
 <body>
+
+  <a class="prevb" onclick="skipChoreo(-1)">❮❮</a>
+  <a class="nextb" onclick="skipChoreo(1)">❯❯</a>
 
 <div class="slideshow-container">
 
@@ -367,87 +391,87 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">49 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/8a47ba298b5cef2794cca4ff8576a278.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/08e7cad376582cff7d52ae3827224c7c.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">50 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/ef34d78a2b1cc165816fabf1f522236d.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/461e9852b4b6fec7faecd5927c865dd4.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">51 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/7e86eba5b49c67840b62a6067c22c7dc.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/9f963461ced01980754d40d593cb3a34.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">52 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/682fb11b72f2e62a5c76dfe57905225d.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/08c1d91854543ac38c93d181831d8c22.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">53 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/0c7bc13f819dd4c866ed7b6cd26b9515.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/c937da11668caf9efa4dee3752fb6fe3.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">54 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/7dc33ab10243b5a00a1b6230b11010e4.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/2f6cfb44042f371eb6d3f75dc4ea5ba9.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">55 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/e728aad2fdd50ba5e17d1dd92a20cda7.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/00255aedd2d1c92175665f9f68be4ddd.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">56 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/0d32b4b34631e171cc6986cb23556f28.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/b8c232e19d89938d9e85928e0d737f02.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">57 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/fc7e95fd93362c3f547dd83e12b80018.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/91c21e5c94bd8991d7495872db1efef3.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">58 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/130e2d1e94e612738862bfb968e62e92.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/f40051c2ac4f23578ce4a315ec0e4bd7.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">59 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/1cdf8528fbba3fd0c87ecf1aaddb9fb3.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/e0a397084ef79fdda2e75fd88f8c150e.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">60 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/5ae144749183943b43e1a549e5b4f148.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/7bd9194e7001cfd2502b853b27fa2943.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">61 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/422b39e4fe25f9675b122812aa1dadda.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/1db258a33ba8708ae6936f43cf90322e.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">62 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/65f7938aa56ecc5bc1d57e18ee636f58.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/bd95c9072929d1f76247845e6d60f182.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">63 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/08bf573f8acfe04901ca9cd93705aab5.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/125cb56b85ec24a060929b48ffd44252.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">64 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/c2f6ca3cc888cc799693edcda252e06e.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/b650fcad737c512957a63afe921254f7.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">65 / 54</div>
-  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/add88b68179525529fe586339f656d40.jpg" style="width:100%">
+  <img draggable="false" (dragstart)="false;" src="https://albumizr.com/ia/4c3ea2ec6dd26328f06f9c0e1a74f58c.jpg" style="width:100%">
 </div>
 
 <div class="mySlides fade">
@@ -520,6 +544,28 @@ function plusSlides(n) {
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+}
+
+function skipChoreo(dir) {
+  if (dir > 0) {
+    if (slideIndex <= 29) {
+      showSlides(slideIndex = 30);
+    }
+
+    if (slideIndex > 29 && slideIndex <= 48) {
+      showSlides(slideIndex = 49);
+    }
+  }
+
+  else {
+    if (slideIndex <= 29) {
+      showSlides(30);
+    }
+
+    if (slideIndex > 29 && slideIndex <= 48) {
+      showSlides(slideIndex = 1);
+    }
+  }
 }
 
 function showSlides(n) {
