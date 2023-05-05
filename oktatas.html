@@ -126,6 +126,26 @@ a:active {
 a:hover {
 				color: #808000;
 }
+
+.center {
+	text-align: center;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+				width: 100%;
+				max-width: 400px;
+				background-color: #808000;
+				border: none;
+				color: white;
+				padding: 16px 32px;
+				text-decoration: none;
+				margin: 30px 0px;
+				cursor: pointer;
+				font-weight: bold;
+				font-size: x-large;
+				font-family: sans-serif;
+				border-radius: 10px;
+}   
 </style>
 </head>
 
@@ -207,7 +227,20 @@ a:hover {
 								<br />
 								</span>
 								<span class="style23">Péntek
-								17:30 - 19:30</span></td>
+								17:30 - 19:30</span>
+								<hr class="line"/>
+								<br />
+								<br />
+								<span class="style26"><strong>Felnőtt csoport<br />
+								</strong></span>
+								<span class="style31"><br />
+								</span>
+								<span class="style23">Következő alkalom: május 19. <br />
+								</span>
+								<span class="style31">
+								<br />
+								</span>							
+								</td>
 				</tr>
 				<tr>
 								<td class="style28"><hr class="line" />
@@ -231,9 +264,18 @@ a:hover {
 								<td class="style28">&nbsp;</td>
 				</tr>
 				<tr>
+								<!--
 								<td class="style8"><strong>
 								<a href="https://mayerneptancmuhely.hu/aktualis/jelentkezes">
 								<span class="style27">Jelentkezés</span></a></strong></td>
+								//-->
+							<td class="center">
+								<form>
+									<div class="style30">
+									<input type="button" value="Jelentkezés" onclick="applyOnClick()"/>
+									</div>
+								</form>
+							</td>
 				</tr>
 				<tr>
 								<td class="style8">&nbsp;</td>
@@ -260,6 +302,14 @@ a:hover {
 				</tr>
 </table>
 <p>&nbsp;</p>
+
+
+<script>
+	function applyOnClick() {
+    window.location.href = "https://mayerneptancmuhely.hu/aktualis/jelentkezes";
+}
+</script>
+
 
 </body>
 
