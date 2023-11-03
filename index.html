@@ -315,6 +315,23 @@ a:hover {
 				font-family: Default;
 }
 
+.divButton {
+	background-color: #808000;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: fit-content;
+	margin: auto;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color .2s;
+}
+
+.divButton:hover {
+	background-color: #535301;
+}
+
 </style>
 </head>
 
@@ -383,6 +400,23 @@ a:hover {
 
 <!-- News -->
 <table style="width: 80%" align="center" cellspacing="5" cellpadding="5" id="Hírek">
+					<tr>
+						<td class="style35"><hr><span class="style12">
+						<strong>Arany minősítés a VI. Gaál Autentika néptáncversenyen</strong></span><div class="style7" id="output1">
+										<p style="height: auto" class="style26">
+										<strong>2023. október</strong></p>
+										<p style="height: auto" class="style26">
+										Büszkék vagyunk táncosainkra, akik ARANY minősítésben részesültek a VI. Gaál Autentika néptáncversenyen...</p>
+										<p class="style22"><strong>
+										<span class="style23">
+										<span class="style27">
+										<a class="style18" href="https://mayerneptancmuhely.hu/aktualis/arany-minosites-tancverseny">Tovább &gt;&gt;</a></span></span></strong></p>
+						</div>
+						</td>
+				</tr>
+				<tr>
+						<td class="style34">&nbsp;</td>
+				</tr>
 				<tr>
 								<td class="style35"><span class="style12">
 								<strong>Interjú a Bicskei Újságban</strong></span><div class="style7" id="output1">
@@ -399,27 +433,8 @@ a:hover {
 								</td>
 				</tr>
 				<tr>
-								<td class="style34">&nbsp;</td>
-				</tr>
-				<tr>
-								<td class="style1"><span class="style12">
-								<strong>Koreográfia-felvételek</strong></span><div class="style7" id="output3">
-												<p style="height: auto" class="style26">
-												<strong>2022. december</strong></p>
-												<p style="height: auto" class="style26">
-												<span class="style31">2022 decemberében egy televíziós megjelenéshez 
-								két koreográfiánkról felvétel készült...</span></p>
-												<p class="style22"><strong>
-												<span class="style23">
-												<span class="style27">
-												<a class="style18" href="https://mayerneptancmuhely.hu/aktualis/koreografia-felvetelek">Tovább &gt;&gt;</a></span></span></strong></p>
-								</div>
-								</td>
-				</tr>
-				<tr>
-								<td class="style38"><strong>
-								<a href="https://mayerneptancmuhely.hu/korabbi-bejegyzesek">
-								Korábbi bejegyzések</a></strong></td>
+								<td class="style38"><div class="divButton" onclick="prevPostsClick()">
+								Korábbi bejegyzések</div><br><hr></td>
 				</tr>
 				<tr>
 								<td class="style39">&nbsp;</td>
@@ -459,7 +474,7 @@ a:hover {
 								<td class="style7">&nbsp;</td>
 				</tr>
 				<tr>
-								<td class="style17">
+								<td class="style17"><hr>
 								<div class="style13">
 												<strong>Jelentkezés</strong></div>
 								<div class="style7" id="output2">
@@ -552,6 +567,10 @@ function showSlides() {
 	function closebtnClick() {
 		document.getElementById("closebtn").parentElement.style.display='none';
 		document.cookie = "closed=true; expires=" + setExpiryDate().toString() + "; path=/";
+	}
+
+	function prevPostsClick() {
+		window.location.href = "https://mayerneptancmuhely.hu/korabbi-bejegyzesek";
 	}
 </script>
 
