@@ -408,7 +408,22 @@ a:hover {
 
 <!-- News -->
 <table style="width: 80%" align="center" cellspacing="5" cellpadding="5" id="Hírek">
-					<tr>
+				<tr>
+						<td class="style35"><hr><span class="style12">
+						<strong>Bicske Városáért Közösségi Díj</strong></span><div class="style7" id="output1">
+										<p style="height: auto" class="style26">
+										<strong>2024. augusztus</strong></p>
+										<p style="height: auto" class="style26">
+										Bicske Önkormányzatától átvehettük a Bicske Városáért Közösségi Díjat...</p>
+										<p class="style22"><strong>
+										<span class="style23">
+										<span class="style27"><div class="divButton" onclick="continueClick(0)">
+										Tovább &gt;&gt;</div></span></span></strong></p>
+						</div>
+						</td>
+				</tr>
+	
+				<tr>
 						<td class="style35"><hr><span class="style12">
 						<strong>Arany minősítés a VI. Gaál Autentika néptáncversenyen</strong></span><div class="style7" id="output1">
 										<p style="height: auto" class="style26">
@@ -417,28 +432,10 @@ a:hover {
 										Büszkék vagyunk táncosainkra, akik ARANY minősítésben részesültek a VI. Gaál Autentika néptáncversenyen...</p>
 										<p class="style22"><strong>
 										<span class="style23">
-										<span class="style27"><div class="divButton" onclick="continueClick(0)">
+										<span class="style27"><div class="divButton" onclick="continueClick(1)">
 										Tovább &gt;&gt;</div></span></span></strong></p>
 						</div>
 						</td>
-				</tr>
-				<tr>
-						<td class="style34">&nbsp;</td>
-				</tr>
-				<tr>
-								<td class="style35"><hr><span class="style12">
-								<strong>Interjú a Bicskei Újságban</strong></span><div class="style7" id="output1">
-												<p style="height: auto" class="style26">
-												<strong>2023. február</strong></p>
-												<p style="height: auto" class="style26">
-												A Bicskei Újság címlapjára 
-												került a Mayer Néptáncműhely...</p>
-												<p class="style22"><strong>
-												<span class="style23">
-												<span class="style27"><div class="divButton" onclick="continueClick(1)">
-												Tovább &gt;&gt;</div></span></span></strong></p>
-								</div>
-								</td>
 				</tr>
 				<tr>
 								<td class="style38"><hr><div class="divButton center" onclick="prevPostsClick()">
@@ -584,11 +581,11 @@ function showSlides() {
 	function continueClick(countNumber) {
 		switch(countNumber) {
 			case 0:
-				window.location.href = "https://mayerneptancmuhely.hu/aktualis/arany-minosites-tancverseny";
+				window.location.href = "https://mayerneptancmuhely.hu/aktualis/bicske-varosaert-kozossegi-dij";
 				break;
 			
 			case 1:
-				window.location.href = "https://mayerneptancmuhely.hu/aktualis/bicskei-ujsag-interju";
+				window.location.href = "https://mayerneptancmuhely.hu/aktualis/arany-minosites-tancverseny";
 				break;
 			
 			case 2:
@@ -598,7 +595,9 @@ function showSlides() {
 			case 3:
 				window.location.href = "https://mayerneptancmuhely.hu/musorok";
 				break;
-			
+
+			default:
+				window.location.href = "https://mayerneptancmuhely.hu/";
 		}
 	}
 </script>
