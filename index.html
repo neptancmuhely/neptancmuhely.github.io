@@ -495,6 +495,7 @@ a:hover {
 								<td class="style39">
 								&nbsp;</td>
 				</tr>
+				<!--
 				<tr>
 								<td class="style8"><hr>
 								<div class="style13">
@@ -503,16 +504,15 @@ a:hover {
 												<p class="style37"><strong>2024. március 25. 17:30: </strong>
 												Tavaszköszöntő Műsor - Óvodás csoport előadása</p>
 												<p class="style13">
-												<!-- -->
 												<p class="style37"><strong>2024. március 26. 18:00: </strong>
 												Tavaszköszöntő Műsor - Iskolás- és Ifjúsági csoportok előadása</p>
-												<p class="style13"><!-- -->
+												<p class="style13">
 												<span class="style23"> 
 												<span class="style27"><div class="divButton" onclick="continueClick(3)" style="font-weight: bold;">
 												Tovább &gt;&gt;</div></span></span>&nbsp;</p>
 								</div>
 								</td>
-				</tr>
+				</tr> -->
 </table>
 
 <p class="style12">&nbsp;</p>
@@ -523,7 +523,7 @@ a:hover {
 								<span id="columnas_especial" class="style15">
 								<br />
 								© 
-								Mayer Néptáncműhely, 2022 - 2024<span class="style21"><br />
+								Mayer Néptáncműhely, 2022 - 2025<span class="style21"><br />
 								<br />
 								<span class="style28">
 								<a href="mailto:info@mayerneptancmuhely.hu">
@@ -537,35 +537,35 @@ a:hover {
 
 <!--
 <div class="callout">
-  <div class="callout-header"><strong>Mayer Néptáncműhely Évzáró Műsora</strong></div>
+  <div class="callout-header"><strong>Jótékonysági Tavaszköszöntő Műsor</strong></div>
   <span class="closebtn" id="closebtn" onclick="closebtnClick()">×</span>
   <div class="callout-container">
-    <p>2023. június 19. 18:00<br/><br/>Petőfi Művelődési Központ, Bicske<br/><a href="https://mayerneptancmuhely.hu/musorok"><span class="calloutlink">További információk</a></span></p>
+    <p>2025. mácius 7. 18:00<br/><br/>Lajtha Ház Kulturális Központ, Bicske<br/><a href="https://mayerneptancmuhely.hu/musorok"><span class="calloutlink">További információk</a></span></p>
   </div>
 </div>
 -->
 
 
 <script>
-let slideIndex = 0;
-showSlides();
+	let slideIndex = 0;
+	showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 6000); 
-}
+	function showSlides() {
+	let i;
+	let slides = document.getElementsByClassName("mySlides");
+	let dots = document.getElementsByClassName("dot");
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	}
+	slideIndex++;
+	if (slideIndex > slides.length) {slideIndex = 1}    
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[slideIndex-1].style.display = "block";  
+	dots[slideIndex-1].className += " active";
+	setTimeout(showSlides, 6000); 
+	}
 </script>
 
 <script>
